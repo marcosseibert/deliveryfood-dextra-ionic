@@ -5,9 +5,13 @@
 
 ----------
 Checklist: 
- Instalar o NodeJS (https://nodejs.org) 
+
+ Instalar o NodeJS (https://nodejs.org)
+
     node -v o npm -v 
+    
  Instalar o Ionic CLI e Cordova (https://ionicframework.com/docs/intro/installation): 
+
      npm install -g ionic cordova 
 
 Execução:
