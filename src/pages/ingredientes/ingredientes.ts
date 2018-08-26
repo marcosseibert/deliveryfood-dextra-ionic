@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { IngredienteService } from '../../services/domain/ingrediente.service';
+import { Ingrediente } from '../../models/ingrediente';
 
 /**
  * Generated class for the IngredientesPage page.
@@ -16,6 +17,9 @@ import { IngredienteService } from '../../services/domain/ingrediente.service';
 })
 export class IngredientesPage {
 
+  items: Ingrediente[];
+
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -25,7 +29,7 @@ export class IngredientesPage {
   ionViewDidLoad() {
     this.ingredienteService.findAll()
       .subscribe(response => {
-        console.log(response)
+        this.items = response;
       },
       error => {
         console.log(error);
