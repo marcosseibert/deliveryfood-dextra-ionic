@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IngredienteService } from '../../services/domain/ingrediente.service';
 
 /**
  * Generated class for the IngredientesPage page.
@@ -15,11 +16,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class IngredientesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public ingredienteService: IngredienteService) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IngredientesPage');
+    this.ingredienteService.findAll()
+      .subscribe(response => {
+        console.log(response)
+      },
+      error => {
+        console.log(error);
+      });
+
+      
   }
 
 }
