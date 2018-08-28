@@ -23,6 +23,7 @@ https://nodesource.com/blog/installing-nodejs-tutorial-windows/
 Execução:
 
 **1 -** Clonar o repositório.
+     
      git clone https://github.com/marcosseibert/deliveryfood-dextra-ionic.git
 
 **2 -** Abrir o terminal onde foi clonado o projeto
