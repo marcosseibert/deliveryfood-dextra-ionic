@@ -8,7 +8,8 @@ Checklist:
 
  Instalar o NodeJS (https://nodejs.org)
 
-    node -v o npm -v
+    node -v 
+    npm -v
 	
 	NodeJS v10.7.0
 	NPM 6.1.0
