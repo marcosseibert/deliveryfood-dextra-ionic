@@ -7,6 +7,7 @@
 Checklist: 
 
  Instalar o NodeJS (https://nodejs.org)
+https://nodesource.com/blog/installing-nodejs-tutorial-windows/
 
     node -v 
     npm -v
