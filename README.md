@@ -28,7 +28,10 @@ Execução:
 **2 -** Abrir o terminal onde foi clonado o projeto
      
 **3 -** Rodar o comando abaixo no terminal para instalar as dependências
+     
      npm install
 
+
 **4 -** Subir o servidor do Ionic com o comando abaixo
+    
     ionic serve
